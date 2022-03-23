@@ -1,0 +1,357 @@
+#N canvas 305 26 1038 735 10;
+#X declare -lib timbreID/timbreIDLib;
+#X obj 137 630 print timbre;
+#X obj 137 48 adc~;
+#X msg 685 575 cluster_list \$1;
+#X msg 457 598 clear;
+#X obj 384 650 s \$0-tID;
+#X obj 70 312 r \$0-tID;
+#X obj 646 650 s \$0-tID;
+#X obj 685 552 hradio 15 1 0 3 empty empty empty 0 -8 0 10 #fcfcfc
+#000000 #000000 0;
+#X msg 705 611 uncluster;
+#X msg 427 578 forget;
+#X obj 167 508 select 0 1 2;
+#X obj 190 385 print cluster;
+#X obj 354 205 bng 15 250 50 0 empty vE0 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 225 bng 15 250 50 0 empty vE1 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 245 bng 15 250 50 0 empty vE2 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 265 bng 15 250 50 0 empty vE3 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 285 bng 15 250 50 0 empty vE4 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 305 bng 15 250 50 0 empty vE5 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 354 325 bng 15 250 50 0 empty vE6 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 374 265 bng 15 250 50 0 empty vE7 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 394 265 bng 15 250 50 0 empty vE8 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 374 205 bng 15 250 50 0 empty vE9 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 394 205 bng 15 250 50 0 empty vE10 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 414 205 bng 15 250 50 0 empty vE11 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 414 244 bng 15 250 50 0 empty vE12 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 415 223 bng 15 250 50 0 empty vE13 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 414 265 bng 15 250 50 0 empty vE14 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 492 323 bng 15 250 50 0 empty vA0 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 498 303 bng 15 250 50 0 empty vA1 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 504 283 bng 15 250 50 0 empty vA2 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 510 263 bng 15 250 50 0 empty vA3 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 516 243 bng 15 250 50 0 empty vA4 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 522 223 bng 15 250 50 0 empty vA5 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 532 203 bng 15 250 50 0 empty vA6 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 542 223 bng 15 250 50 0 empty vA7 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 548 243 bng 15 250 50 0 empty vA8 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 554 263 bng 15 250 50 0 empty vA9 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 560 283 bng 15 250 50 0 empty vA10 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 566 303 bng 15 250 50 0 empty vA11 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 572 323 bng 15 250 50 0 empty vA12 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 533 263 bng 15 250 50 0 empty vA13 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 680 325 bng 15 250 50 0 empty vO7 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 664 305 bng 15 250 50 0 empty vO8 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 654 285 bng 15 250 50 0 empty vO9 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 646 266 bng 15 250 50 0 empty vO10 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 654 245 bng 15 250 50 0 empty vO11 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 664 225 bng 15 250 50 0 empty vO12 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 680 205 bng 15 250 50 0 empty vO13 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 700 205 bng 15 250 50 0 empty vO0 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 716 225 bng 15 250 50 0 empty vO1 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 726 245 bng 15 250 50 0 empty vO2 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 734 265 bng 15 250 50 0 empty vO3 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 726 285 bng 15 250 50 0 empty vO4 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 716 305 bng 15 250 50 0 empty vO5 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 700 325 bng 15 250 50 0 empty vO6 empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#N canvas 234 150 449 341 vE 0;
+#X obj 68 12 inlet;
+#X obj 68 73 % 15;
+#X obj 68 94 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14;
+#X obj 38 285 s vE0;
+#X obj 58 265 s vE1;
+#X obj 78 245 s vE2;
+#X obj 98 225 s vE3;
+#X obj 118 205 s vE4;
+#X obj 138 185 s vE5;
+#X obj 158 165 s vE6;
+#X obj 178 145 s vE7;
+#X obj 328 285 s vE8;
+#X obj 338 265 s vE9;
+#X obj 348 245 s vE10;
+#X obj 358 225 s vE11;
+#X obj 368 205 s vE12;
+#X obj 378 185 s vE13;
+#X obj 388 165 s vE14;
+#X obj 68 33 f 0;
+#X obj 98 33 + 1;
+#X connect 0 0 18 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 2 2 5 0;
+#X connect 2 3 6 0;
+#X connect 2 4 7 0;
+#X connect 2 5 8 0;
+#X connect 2 6 9 0;
+#X connect 2 7 10 0;
+#X connect 2 8 11 0;
+#X connect 2 9 12 0;
+#X connect 2 10 13 0;
+#X connect 2 11 14 0;
+#X connect 2 12 15 0;
+#X connect 2 13 16 0;
+#X connect 2 14 17 0;
+#X connect 18 0 19 0;
+#X connect 18 0 1 0;
+#X connect 19 0 18 1;
+#X restore 167 569 pd vE;
+#N canvas 234 150 451 341 vA 0;
+#X obj 68 12 inlet;
+#X obj 68 73 % 15;
+#X obj 68 94 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14;
+#X obj 38 285 s vA0;
+#X obj 58 265 s vA1;
+#X obj 78 245 s vA2;
+#X obj 98 225 s vA3;
+#X obj 118 205 s vA4;
+#X obj 138 185 s vA5;
+#X obj 158 165 s vA6;
+#X obj 178 145 s vA7;
+#X obj 328 285 s vA8;
+#X obj 338 265 s vA9;
+#X obj 348 245 s vA10;
+#X obj 358 225 s vA11;
+#X obj 368 205 s vA12;
+#X obj 378 185 s vA13;
+#X obj 388 165 s vA14;
+#X obj 68 33 f 0;
+#X obj 98 33 + 1;
+#X connect 0 0 18 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 2 2 5 0;
+#X connect 2 3 6 0;
+#X connect 2 4 7 0;
+#X connect 2 5 8 0;
+#X connect 2 6 9 0;
+#X connect 2 7 10 0;
+#X connect 2 8 11 0;
+#X connect 2 9 12 0;
+#X connect 2 10 13 0;
+#X connect 2 11 14 0;
+#X connect 2 12 15 0;
+#X connect 2 13 16 0;
+#X connect 2 14 17 0;
+#X connect 18 0 19 0;
+#X connect 18 0 1 0;
+#X connect 19 0 18 1;
+#X restore 194 549 pd vA;
+#N canvas 234 150 469 335 vO 0;
+#X obj 68 12 inlet;
+#X obj 68 73 % 15;
+#X obj 68 94 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14;
+#X obj 38 285 s vO0;
+#X obj 58 265 s vO1;
+#X obj 78 245 s vO2;
+#X obj 98 225 s vO3;
+#X obj 118 205 s vO4;
+#X obj 138 185 s vO5;
+#X obj 158 165 s vO6;
+#X obj 178 145 s vO7;
+#X obj 328 285 s vO8;
+#X obj 338 265 s vO9;
+#X obj 348 245 s vO10;
+#X obj 358 225 s vO11;
+#X obj 368 205 s vO12;
+#X obj 378 185 s vO13;
+#X obj 388 165 s vO14;
+#X obj 68 33 f 0;
+#X obj 98 33 + 1;
+#X connect 0 0 18 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 2 2 5 0;
+#X connect 2 3 6 0;
+#X connect 2 4 7 0;
+#X connect 2 5 8 0;
+#X connect 2 6 9 0;
+#X connect 2 7 10 0;
+#X connect 2 8 11 0;
+#X connect 2 9 12 0;
+#X connect 2 10 13 0;
+#X connect 2 11 14 0;
+#X connect 2 12 15 0;
+#X connect 2 13 16 0;
+#X connect 2 14 17 0;
+#X connect 18 0 19 0;
+#X connect 18 0 1 0;
+#X connect 19 0 18 1;
+#X restore 221 529 pd vO;
+#X obj 144 99 metro 11.61;
+#X obj 137 479 route 0 1;
+#X obj 137 330 route 0 1;
+#X obj 137 259 list split 40;
+#N canvas 516 619 444 187 init 0;
+#X obj 139 21 r tr-id;
+#X obj 139 42 route 0 1;
+#X obj 169 93 print -n;
+#X msg 169 73 Identification mode active;
+#X obj 139 133 print -n;
+#X msg 139 113 Training mode active;
+#X obj 31 23 loadbang;
+#X msg 31 112 \; pd dsp 1 \;;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 1 1 3 0;
+#X connect 3 0 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X restore 514 650 pd init;
+#N canvas 92 382 476 283 why? 0;
+#X text 26 26 The idea behind cepstral analysis is that it deconvolves
+two convolved sounds. In the case of your singing voice \, a certain
+frequency of glottal impulses are convolved with the filter that is
+your head. By breaking off the early part of the cepstrum using these
+instances of [list split] \, we're grabbing the part of cepstrum that's
+supposed to only represent the filter \, not the pitch. When you change
+the shape of your oral cavity by changing vowels \, you're changing
+the filter \, and hopefully we can recognize that change here.;
+#X text 26 166 This deconvolution isn't perfect \, but it does seem
+to work with voice and reed instruments. The choice of using cepstral
+coefficients 1 - 40 out of the total 513 that are available is totally
+arbitrary. Try something else if you want. You could also try [bfcc~]
+instead \, although it seems to be more sensitive to pitch.;
+#X restore 38 271 pd why? -->;
+#X obj 137 285 list split 1;
+#X obj 1 1 cnv 10 400 10 empty empty empty 20 12 0 14 #e0e0e0 #404040
+0;
+#X obj 1 1 cnv 10 10 400 empty empty empty 20 12 0 14 #e0e0e0 #404040
+0;
+#X obj 144 79 tgl 15 0 empty empty Continuous-analysis 17 7 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 137 148 cepstrum~ 1024;
+#X obj 137 359 timbreID;
+#N canvas 497 47 624 342 onset 0;
+#X obj 74 25 bonk~;
+#X obj 74 46 t b;
+#X floatatom 141 135 5 0 0 0 - - - 0;
+#X obj 102 -19 loadbang;
+#X obj 74 112 spigot 1;
+#X msg 127 88 0;
+#X msg 95 88 1;
+#X obj 74 133 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X text 159 89 To avoid double attacks.;
+#X text 118 26 Use bonk~ to detect attacks.;
+#X obj 74 -57 inlet~;
+#X obj 74 217 outlet;
+#X obj 95 68 del 200;
+#X obj 74 153 del 11.6;
+#X text 152 150 Delay the bang to cepstrum~ by 1/2 the analysis period
+to fill the window with a good portion of immediately post-onset sound.
+;
+#X msg 102 1 minvel 30;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 13 1;
+#X connect 3 0 15 0;
+#X connect 4 0 5 0;
+#X connect 4 0 7 0;
+#X connect 4 0 12 0;
+#X connect 5 0 4 1;
+#X connect 6 0 4 1;
+#X connect 7 0 13 0;
+#X connect 10 0 0 0;
+#X connect 12 0 6 0;
+#X connect 13 0 11 0;
+#X connect 15 0 0 0;
+#X restore 33 53 pd onset;
+#X obj 33 78 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X msg 646 503 cluster 3;
+#X obj 137 310 list prepend 1;
+#X obj 137 459 list prepend 1;
+#X msg 385 556 read db2.timid;
+#X obj 890 654 declare -lib timbreID/timbreIDLib;
+#X obj 386 437 loadbang;
+#X obj 496 464 del 50;
+#X obj 223 35 inlet;
+#X obj 22 545 outlet;
+#X text 354 353 Pizz;
+#X text 493 351 Arco;
+#X text 669 354 Silence;
+#X obj 22 516 int 2;
+#X obj 20 457 del 50;
+#X connect 1 0 70 0;
+#X connect 1 0 68 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 5 0 69 0;
+#X connect 7 0 2 0;
+#X connect 8 0 6 0;
+#X connect 9 0 4 0;
+#X connect 10 0 55 0;
+#X connect 10 1 56 0;
+#X connect 10 2 57 0;
+#X connect 58 0 68 0;
+#X connect 59 0 0 0;
+#X connect 59 1 10 0;
+#X connect 59 1 84 1;
+#X connect 60 0 69 0;
+#X connect 60 1 69 1;
+#X connect 61 0 64 0;
+#X connect 64 1 73 0;
+#X connect 67 0 58 0;
+#X connect 68 0 61 0;
+#X connect 69 0 74 0;
+#X connect 69 3 11 0;
+#X connect 70 0 71 0;
+#X connect 71 0 85 0;
+#X connect 72 0 6 0;
+#X connect 73 0 60 0;
+#X connect 74 0 59 0;
+#X connect 75 0 4 0;
+#X connect 77 0 75 0;
+#X connect 77 0 78 0;
+#X connect 78 0 72 0;
+#X connect 79 0 67 0;
+#X connect 84 0 80 0;
+#X connect 85 0 84 0;
